@@ -1,0 +1,9 @@
+~/Documents/mmdb/data/colorsounds/firebrick.wav
+~/Documents/mmdb/data/colorsounds/goldenrod.wav
+~/Documents/mmdb/data/colorsounds/grey.wav
+~/Documents/mmdb/data/colorsounds/indigo.wav
+~/Documents/mmdb/data/colorsounds/ivory.wav
+~/Documents/mmdb/data/colorsounds/khaki.wav
+~/Documents/mmdb/data/colorsounds/lavender.wav
+~/Documents/mmdb/data/colorsounds/lightblue.wav
+~/Documents/mmdb/data/colorsounds/lightgray.wav

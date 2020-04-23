@@ -1,0 +1,10 @@
+~/Documents/mmdb/data/colorsounds/bisque.wav
+~/Documents/mmdb/data/colorsounds/black.wav
+~/Documents/mmdb/data/colorsounds/brown.wav
+~/Documents/mmdb/data/colorsounds/chocolate.wav
+~/Documents/mmdb/data/colorsounds/coral.wav
+~/Documents/mmdb/data/colorsounds/cornflowerblue.wav
+~/Documents/mmdb/data/colorsounds/darkblue.wav
+~/Documents/mmdb/data/colorsounds/darkgray.wav
+~/Documents/mmdb/data/colorsounds/darkred.wav
+~/Documents/mmdb/data/colorsounds/lightyellow.wav

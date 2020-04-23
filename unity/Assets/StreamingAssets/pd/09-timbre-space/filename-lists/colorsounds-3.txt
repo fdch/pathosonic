@@ -1,0 +1,10 @@
+~/Documents/mmdb/data/colorsounds/linen.wav
+~/Documents/mmdb/data/colorsounds/maroon.wav
+~/Documents/mmdb/data/colorsounds/moccasin.wav
+~/Documents/mmdb/data/colorsounds/navy.wav
+~/Documents/mmdb/data/colorsounds/olivedrab.wav
+~/Documents/mmdb/data/colorsounds/orange.wav
+~/Documents/mmdb/data/colorsounds/peru.wav
+~/Documents/mmdb/data/colorsounds/plum.wav
+~/Documents/mmdb/data/colorsounds/powderblue.wav
+~/Documents/mmdb/data/colorsounds/purple.wav

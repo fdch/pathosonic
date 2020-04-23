@@ -1,0 +1,240 @@
+#N canvas 746 53 755 841 12;
+#X obj 534 713 array define \$0-prev-real;
+#X obj 533 741 array define \$0-prev-imag;
+#X obj 60 569 *~;
+#X obj 27 569 *~;
+#X obj 27 591 -~;
+#X obj 176 567 *~;
+#X obj 145 567 *~;
+#X obj 145 592 +~;
+#X obj 118 337 *~;
+#X obj 87 337 *~;
+#X obj 59 337 *~;
+#X obj 28 337 *~;
+#X obj 37 365 +~;
+#X obj 80 434 *~;
+#X obj 29 714 *~;
+#X obj 125 520 rfft~;
+#X obj 135 270 rfft~;
+#X obj 28 655 rifft~;
+#X obj 30 738 outlet~;
+#X obj 46 433 *~;
+#X obj 47 460 +~;
+#X obj 100 404 -~;
+#X obj 27 523 *~;
+#X obj 60 524 *~;
+#X obj 136 714 r window-size;
+#X obj 435 687 r window-size;
+#X obj 435 736 block~;
+#X obj 30 393 +~ 1e-015;
+#X obj 28 690 *~;
+#X obj 136 735 expr 2/(3*$f1);
+#X msg 435 711 set \$1 4;
+#X obj 47 489 q8_rsqrt~;
+#N canvas 594 197 696 799 read-windows 0;
+#X obj 18 693 *~;
+#X obj 340 448 r window-size;
+#X obj 166 303 f;
+#X obj 102 91 r window-size;
+#X obj 102 139 /;
+#X obj 195 695 *~;
+#X obj 166 264 bang~;
+#X obj 17 551 line~;
+#X obj 102 164 * 1000;
+#X obj 208 305 +;
+#X obj 51 597 / 4;
+#X obj 340 474 *;
+#X obj 501 313 r transpo;
+#X obj 499 387 * 0.01;
+#X obj 501 408 + 69;
+#X obj 502 429 mtof;
+#X obj 502 451 / 440;
+#X obj 375 474 t b f;
+#X obj 19 719 outlet~;
+#X obj 195 720 outlet~;
+#X text 411 498 stretched window size (samples);
+#X floatatom 111 187 5 0 0 0 - - -;
+#X obj 102 115 t f b;
+#X obj 132 139 samplerate~;
+#X obj 102 208 / 4;
+#X obj 203 420 / 2;
+#X obj 166 420 -;
+#X text 239 417 back up 1/2 window;
+#X obj 16 597 -~;
+#X text 43 6 Read two windows out of the recorded sample \, one 1/4
+ahead of the other. The mid point of the front window is specified
+by "\$0-location". If "speed" is nonzero \, "\$0-location" automatically
+precesses.;
+#X text 81 601 "back" window 1/4 cycle behind "front" one;
+#X text 137 205 computation period (msec) for overlap of 4;
+#X text 164 186 msec in a window;
+#X text 400 524 stretched window size.;
+#X obj 16 469 f;
+#X obj 17 496 pack;
+#X obj 15 440 b;
+#X msg 17 523 0 \, \$1 \$2;
+#X obj 17 637 tabread4~ \$3;
+#X obj 194 637 tabread4~ \$3;
+#X obj 218 664 tabreceive~ \$2;
+#X obj 540 12 inlet;
+#X obj 281 512 t f f f;
+#X floatatom 102 234 5 0 0 0 - - -;
+#X floatatom 208 331 5 0 0 0 - - -;
+#X connect 0 0 18 0;
+#X connect 1 0 11 0;
+#X connect 2 0 9 0;
+#X connect 2 0 26 0;
+#X connect 3 0 22 0;
+#X connect 4 0 8 0;
+#X connect 5 0 19 0;
+#X connect 6 0 2 0;
+#X connect 7 0 28 0;
+#X connect 7 0 39 0;
+#X connect 8 0 21 0;
+#X connect 8 0 24 0;
+#X connect 9 0 2 1;
+#X connect 9 0 44 0;
+#X connect 10 0 28 1;
+#X connect 11 0 42 0;
+#X connect 12 0 13 0;
+#X connect 13 0 14 0;
+#X connect 14 0 15 0;
+#X connect 15 0 16 0;
+#X connect 16 0 17 0;
+#X connect 17 0 11 0;
+#X connect 17 1 11 1;
+#X connect 22 0 4 0;
+#X connect 22 1 23 0;
+#X connect 23 0 4 1;
+#X connect 24 0 35 1;
+#X connect 24 0 43 0;
+#X connect 25 0 26 1;
+#X connect 26 0 36 0;
+#X connect 26 0 38 1;
+#X connect 26 0 39 1;
+#X connect 28 0 38 0;
+#X connect 34 0 35 0;
+#X connect 35 0 37 0;
+#X connect 36 0 34 0;
+#X connect 37 0 7 0;
+#X connect 38 0 0 0;
+#X connect 39 0 5 0;
+#X connect 40 0 5 1;
+#X connect 40 0 0 1;
+#X connect 41 0 2 1;
+#X connect 42 0 34 1;
+#X connect 42 1 25 0;
+#X connect 42 2 10 0;
+#X restore 137 71 pd read-windows;
+#X obj 146 635 tabsend~ \$0-prev-imag;
+#X obj 145 659 tabsend~ \$0-prev-real;
+#X obj 29 111 tabreceive~ \$0-prev-real;
+#X obj 82 133 tabreceive~ \$0-prev-imag;
+#X text 281 97 recall previous output amplitude. Its phase will be
+added to the phase difference we measure from two windows in the the
+recorded sound.;
+#X obj 78 160 *~;
+#X obj 46 160 *~;
+#X obj 46 182 +~;
+#X obj 44 232 q8_rsqrt~;
+#X obj 44 209 +~ 1e-020;
+#X obj 82 273 *~;
+#X obj 28 272 *~;
+#X text 256 158 divide by the magnitude to make a unit-magnitude complex
+amplitude (phase only). The 1e-020 is to prevent overflows. q8_rsqrt~
+is reciprocal square root.;
+#X text 256 257 Take FT of the window in back. Multiply its conjugate
+by the normalized previous output. The result has the magnitude of
+the input sound and phase (previous output phase) minus (back window
+phase).;
+#X text 258 462 Normalize again \, this time taking care to salt each
+channel with 1e-015 so that we get a unit complex number even if everything
+was zero heretofore.;
+#X text 297 519 Now take the FT of the forward window and multiply
+it by the unit complex number from above. The magnitude will be that
+of the forward window and the phase will be the previous output phase
+plus the phase difference between the two analysis windows -- except
+that if "lock" is on \, they will be modified to agree progressively
+better with the inter-channel phase relationships of the input.;
+#X text 258 334 If "lock" is on \, encourage neighboring channels to
+stay in phase by adding the two neighboring complex amplitudes. The
+result will tend toward the channel with the strongest amplitude. If
+the phase relationships between channels in the output and those in
+the input are in parallel \, then neighboring channels of the quotient
+will all have the same phase and this will not change any phases. (lrshift
+shifts the signal to the left or right depending on its argument.)
+;
+#X text 396 652 'set' message to block;
+#X text 399 669 allows variable size;
+#X text 268 218 Read two windows \, one 1/4 length behind the other
+\, of the input sound \, with Hann window function (see inside).;
+#X obj 61 690 tabreceive~ \$2;
+#X obj 575 631 r window-size;
+#X msg 575 680 resize \$1;
+#X obj 128 20 inlet location;
+#X connect 2 0 4 1;
+#X connect 3 0 4 0;
+#X connect 4 0 34 0;
+#X connect 4 0 17 0;
+#X connect 5 0 7 1;
+#X connect 6 0 7 0;
+#X connect 7 0 33 0;
+#X connect 7 0 17 1;
+#X connect 8 0 21 1;
+#X connect 9 0 21 0;
+#X connect 10 0 12 1;
+#X connect 11 0 12 0;
+#X connect 12 0 27 0;
+#X connect 13 0 20 1;
+#X connect 14 0 18 0;
+#X connect 15 0 3 1;
+#X connect 15 0 5 1;
+#X connect 15 1 2 1;
+#X connect 15 1 6 1;
+#X connect 16 0 11 1;
+#X connect 16 0 9 1;
+#X connect 16 1 8 1;
+#X connect 16 1 10 1;
+#X connect 17 0 28 0;
+#X connect 19 0 20 0;
+#X connect 20 0 31 0;
+#X connect 21 0 23 0;
+#X connect 21 0 13 0;
+#X connect 21 0 13 1;
+#X connect 22 0 3 0;
+#X connect 22 0 6 0;
+#X connect 23 0 2 0;
+#X connect 23 0 5 0;
+#X connect 24 0 29 0;
+#X connect 25 0 30 0;
+#X connect 27 0 19 1;
+#X connect 27 0 19 0;
+#X connect 27 0 22 0;
+#X connect 28 0 14 0;
+#X connect 29 0 14 1;
+#X connect 30 0 26 0;
+#X connect 31 0 22 1;
+#X connect 31 0 23 1;
+#X connect 32 0 16 0;
+#X connect 32 1 15 0;
+#X connect 35 0 39 1;
+#X connect 35 0 39 0;
+#X connect 35 0 44 0;
+#X connect 36 0 38 1;
+#X connect 36 0 38 0;
+#X connect 36 0 43 0;
+#X connect 38 0 40 1;
+#X connect 39 0 40 0;
+#X connect 40 0 42 0;
+#X connect 41 0 43 1;
+#X connect 41 0 44 1;
+#X connect 42 0 41 0;
+#X connect 43 0 10 0;
+#X connect 43 0 9 0;
+#X connect 44 0 11 0;
+#X connect 44 0 8 0;
+#X connect 53 0 28 1;
+#X connect 54 0 55 0;
+#X connect 55 0 0 0;
+#X connect 55 0 1 0;
+#X connect 56 0 32 0;

@@ -1,0 +1,13 @@
+~/Documents/mmdb/data/colorsounds/salmon.wav
+~/Documents/mmdb/data/colorsounds/sandybrown.wav
+~/Documents/mmdb/data/colorsounds/sienna.wav
+~/Documents/mmdb/data/colorsounds/silver.wav
+~/Documents/mmdb/data/colorsounds/skyblue.wav
+~/Documents/mmdb/data/colorsounds/slateblue.wav
+~/Documents/mmdb/data/colorsounds/slategray.wav
+~/Documents/mmdb/data/colorsounds/snow.wav
+~/Documents/mmdb/data/colorsounds/steelblue.wav
+~/Documents/mmdb/data/colorsounds/tan.wav
+~/Documents/mmdb/data/colorsounds/wheat.wav
+~/Documents/mmdb/data/colorsounds/white.wav
+~/Documents/mmdb/data/colorsounds/yellowgreen.wav

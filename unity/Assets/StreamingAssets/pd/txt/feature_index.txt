@@ -1,0 +1,77 @@
+sample number
+frame number
+bark brightness
+bark centroid
+bark flatness
+bark flux
+bark irregularity
+bark kurtosis
+bark rolloff
+bark skewness
+bark spectrum slope
+bark spread
+brightness
+centroid
+flatness
+flux
+harmonicity
+inharmonicity
+irregularity
+kurtosis
+rolloff
+skewness
+slope
+spread
+wave slope
+zero crossing
+pitch
+amplitude
+BFCC 1
+BFCC 2
+BFCC 3
+BFCC 4
+BFCC 5
+BFCC 6
+BFCC 7
+BFCC 8
+BFCC 9
+BFCC 10
+BFCC 11
+BFCC 12
+BFCC 13
+BFCC 14
+BFCC 15
+BFCC 16
+BFCC 17
+BFCC 18
+BFCC 19
+BFCC 20
+BFCC 21
+BFCC 22
+BFCC 23
+BFCC 24
+BFCC 25
+BFCC 26
+BFCC 27
+BFCC 28
+BFCC 29
+BFCC 30
+BFCC 31
+BFCC 32
+BFCC 33
+BFCC 34
+BFCC 35
+BFCC 36
+BFCC 37
+BFCC 38
+BFCC 39
+BFCC 40
+BFCC 41
+BFCC 42
+BFCC 43
+BFCC 44
+BFCC 45
+BFCC 46
+BFCC 47
+BFCC 48
+BFCC 49
