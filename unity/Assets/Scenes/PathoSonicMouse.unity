@@ -275,90 +275,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.59, y: 0.25999975}
   m_SizeDelta: {x: 5.6, y: 3.65}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &289330045
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 289330047}
-  - component: {fileID: 289330046}
-  - component: {fileID: 289330048}
-  m_Layer: 0
-  m_Name: Shape
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &289330046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 289330045}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7017ff03fd126284988159621fa08af6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textFile: {fileID: 4900000, guid: 9c575159e471e9148a18b6523b15b627, type: 3}
-  featText: {fileID: 4900000, guid: 9231612902ed43644b6a9cf7420a7af6, type: 3}
-  lines: []
-  feats: []
-  Xplot: 0
-  Yplot: 0
-  Zplot: 0
-  triRes: 0
-  Rplot: 0
-  Gplot: 0
-  Bplot: 0
-  Aplot: 0
-  pRplot: 0
-  pGplot: 0
-  pBplot: 0
-  pAplot: 0
-  pXplot: 0
-  pYplot: 0
-  pZplot: 0
-  ptriRes: 0
-  sndFrame: {fileID: 1747998114896959970, guid: aa96c68ed32a3fc44b9b3750c6c7e9fc,
-    type: 3}
-  scale: 0
-  xof: 0
-  yof: 0
-  zof: 0
-  gM: {fileID: 2100000, guid: 109ff672500aa3149871d0e8975957f7, type: 2}
---- !u!4 &289330047
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 289330045}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.2134223, y: 2.9442534, z: 3.0731583}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &289330048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 289330045}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 720db89e5a7a4fa49820c09458af05c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  patchName: main2.pd
 --- !u!1 &365971458
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,7 +525,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &435980573
 GameObject:
@@ -821,33 +737,6 @@ MonoBehaviour:
   _headPoseRelativeOffsetRotation: {x: 0, y: 0, z: 0}
   _headPoseRelativeOffsetTranslation: {x: 0, y: 0, z: 0}
   profilerTcpPort: 32419
-  expandMixedRealityCapturePropertySheet: 0
-  enableMixedReality: 0
-  compositionMethod: 0
-  extraHiddenLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  externalCompositionBackdropColor: {r: 0, g: 0, b: 0, a: 0}
-  capturingCameraDevice: 0
-  flipCameraFrameHorizontally: 0
-  flipCameraFrameVertically: 0
-  handPoseStateLatency: 0
-  sandwichCompositionRenderLatency: 0
-  sandwichCompositionBufferedFrames: 8
-  chromaKeyColor: {r: 0, g: 1, b: 0, a: 1}
-  chromaKeySimilarity: 0.6
-  chromaKeySmoothRange: 0.03
-  chromaKeySpillRange: 0.06
-  useDynamicLighting: 0
-  depthQuality: 1
-  dynamicLightingSmoothFactor: 8
-  dynamicLightingDepthVariationClampingValue: 0.001
-  virtualGreenScreenType: 0
-  virtualGreenScreenTopY: 10
-  virtualGreenScreenBottomY: -10
-  virtualGreenScreenApplyDepthCulling: 0
-  virtualGreenScreenDepthTolerance: 0.2
-  mrcActivationMode: 0
   _trackingOriginType: 0
   usePositionTracking: 1
   useRotationTracking: 1
@@ -1500,10 +1389,10 @@ MonoBehaviour:
   axes: 0
   sensitivityX: 2
   sensitivityY: 2
-  minimumX: -90
-  maximumX: 90
-  minimumY: -30
-  maximumY: 30
+  minimumX: -180
+  maximumX: 180
+  minimumY: -90
+  maximumY: 90
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2110,7 +1999,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &983290669
 GameObject:
@@ -2176,7 +2065,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1080586007
 GameObject:
@@ -2555,8 +2444,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08f670f47892b3b4c934df43eb2ea3f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textFile: {fileID: 4900000, guid: 8756ff62849d8774b90a2ea7434de7ca, type: 3}
-  featText: {fileID: 4900000, guid: 9231612902ed43644b6a9cf7420a7af6, type: 3}
   lines: []
   feats: []
   Xplot: 0
@@ -2620,7 +2507,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1330976606 stripped
 Transform:
@@ -3734,7 +3621,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 67a63c616511a2f40b767b1bc205c89b,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: LHAND
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 67a63c616511a2f40b767b1bc205c89b,
         type: 3}
@@ -3838,7 +3725,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 67a63c616511a2f40b767b1bc205c89b,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: RHAND
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 67a63c616511a2f40b767b1bc205c89b,
         type: 3}

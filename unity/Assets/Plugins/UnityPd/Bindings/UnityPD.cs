@@ -18,7 +18,7 @@ using System.IO;
 /// Bridge for PdCalls
 /// </summary>
 public class UnityPD : MonoBehaviour {
-    const string PATCH_DIR = "pd";
+    const string PATCH_DIR = "bin";
 
     private static UnityPD _instance;
 

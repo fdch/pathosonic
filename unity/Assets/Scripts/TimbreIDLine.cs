@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.IO;
 
 public class TimbreIDLine : MonoBehaviour
 {
 
     #region Variables
 
-    public TextAsset textFile, featText;            // drop your file here in inspector
+    private TextAsset textFile, featText;            // drop your file here in inspector
     public string[] lines = { }, feats= { };       // the array holding each line of text, and each feature
     public int Xplot, Yplot, Zplot, triRes;         // the user-defined choice for each axis
     public int Rplot, Gplot, Bplot, Aplot;          // the user-defined choice for each color
@@ -61,7 +62,11 @@ public class TimbreIDLine : MonoBehaviour
         yof = -2.8f;
         xof = 7.5f;
         zof = -1.5f;
-        
+
+
+        textFile = Resources.Load<TextAsset>("bird10");
+        featText = Resources.Load<TextAsset>("feature_index");
+
         // read the lines of the text into a private array of strings
         lines = textFile.text.Split(new string[] { "\n" }, System.StringSplitOptions.RemoveEmptyEntries);
         feats = featText.text.Split(new string[] { "\n" }, System.StringSplitOptions.RemoveEmptyEntries);
@@ -88,8 +93,8 @@ public class TimbreIDLine : MonoBehaviour
     #endregion
 
 
-    #region Update
-
+#region Update
+#if true
     void Update()
     {
         // only update if user changed some value
@@ -176,8 +181,8 @@ public class TimbreIDLine : MonoBehaviour
         }
 
     }
-
-    #endregion
+#endif
+#endregion
     public int UpdateIt(ref int current, ref int prev)
     {
         int temp = prev;
@@ -208,7 +213,7 @@ public class TimbreIDLine : MonoBehaviour
         return vals;
     }
 
-    #region UpdateShape
+#region UpdateShape
 
     void UpdateShape()
     {
@@ -252,10 +257,10 @@ public class TimbreIDLine : MonoBehaviour
         //lr.SetPositions(vertices);
     }
 
-    #endregion
+#endregion
 
 
-    #region InstantiatePrefabs
+#region InstantiatePrefabs
     void InstantiatePrefabs()
     {
         //LineRenderer lr = GetComponent<LineRenderer>();
@@ -275,6 +280,6 @@ public class TimbreIDLine : MonoBehaviour
         //lr.SetPositions(vertices);
     }
 
-    #endregion
+#endregion
 
 }

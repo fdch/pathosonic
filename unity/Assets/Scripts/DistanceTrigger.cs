@@ -16,7 +16,7 @@ public class DistanceTrigger : MonoBehaviour
     //private Text distText;
     private Color cColor, tColor;
     private Renderer myRend;
-    public TimbreIDLine timbreIDLine;
+    private TimbreIDLine timbreIDLine;
     private int[] lineIndexArray;
 
 
