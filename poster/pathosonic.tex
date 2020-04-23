@@ -1,56 +1,17 @@
 \documentclass{nime-alternate} 
-
-% For your initial submission you MUST ANONYMIZE the authors.
-
-\usepackage{anonymize} 		    % Uncomment this line to publish
-% \usepackage[blind]{anonymize}       % Uncomment this line for blind review
 \usepackage[utf8]{inputenc}
 
 \begin{document}
 
-\conferenceinfo{}
-
 \title{PathoSonic: Performing Sound In Virtual Reality Feature Space}
 
-\label{key}
-
-\numberofauthors{2}
-\author{
-\alignauthor
-
-\anonymize{Federico Camara Halac}\\
-       \affaddr{\anonymize{Ohio State University}}\\
-       \affaddr{\anonymize{Advanced Computing Center for the Arts and Design}}\\
-       \affaddr{\anonymize{1813 North High Street}}\\
-       \affaddr{\anonymize{Columbus, Ohio}}\\
-       \email{\anonymize{camarahalac.1@osu.edu}}
-
-\alignauthor
-\anonymize{Shadrick Addy}\\
-       \affaddr{\anonymize{Ohio State University}}\\
-       \affaddr{\anonymize{Advanced Computing Center for the Arts and Design}}\\
-       \affaddr{\anonymize{1813 North High Street}}\\
-       \affaddr{\anonymize{Columbus, Ohio}}\\
-       \email{\anonymize{addy.29@osu.edu}}
-
-}
-
-\date{24 January 2020}
 \maketitle
 
 \begin{abstract}
+
 PathoSonic is a VR experience that enables a participant to visualize and perform a sound file based on timbre feature descriptors displayed in space. The name comes from the different paths the participant can create through their sonic explorations. The goal of this research is to leverage affordances of virtual reality technology to visualize sound through different levels of performance-based interactivity that immerses the participant's body in a spatial virtual environment. Through implementation of a multi-sensory experience, including visual aesthetics, sound, and haptic feedback, we explore inclusive approaches to sound visualization, making it more accessible to a wider audience including those with hearing, and mobility impairments. 
 
 \end{abstract}
-
-\keywords{Unity, \texttt{pd}, Timbre, Spatialization}
-
-\ccsdesc[500]{Applied computing~Sound and music computing}
-\ccsdesc[300]{Applied computing~Performing arts}
-\ccsdesc[300]{Human-centered computing~Activity centered design}
-\ccsdesc[100]{Information systems~Music retrieval}
-
-\printccsdesc
 
 \section{Introduction}
 
@@ -67,7 +28,6 @@ The goal of this research is to leverage affordances of virtual reality technolo
 
 % \subsection{Previous Work}
 
-
 \subsection{Implementation}
 
 This section describes the method of implementation we undertook to develop PantoSonic VR Experience.
@@ -77,9 +37,11 @@ This section describes the method of implementation we undertook to develop Pant
 \paragraph{Sound Analysis} We analyzed a sound file using William Brent's open-source timbre analysis library, \texttt{timbreID} \cite{icmc/bbp2372.2010.044}. A ten-second sound file of a bird chirping was used, with a sampling rate of 44.1 kHz. With an analysis window size of 4096, we simultaneously reduced the size of the point-cloud and increased the length of each sonic point on the cloud. In other words, a larger sound grain enhances the performative aspect of the experience, since the playback for each point lasts a perceptually-friendly 10 milliseconds.
 
 \paragraph{Playback}
+
 We imported the analysis data as a plain text file into our Unity project, by loading the data into internal arrays that point to onsets to each grain start point in the sound file. Therefore, we used all the timbre descriptor data about each grain to generate a 3D visualization surrounding the participant. The participant is given a simple user interface (UI) to select which timbre feature is plotted on each \texttt{XYZ} axis, as well as on \texttt{RGB} color space. Thus, up to six different features of the sound file can be visualized at once. We based the internal logic of this visualization on Neupert's 2017 implementation of \texttt{timbreID} in VR and on Brent's recent examples using GEM's 2D display. However, by bringing these two together into the wireless experience of the Oculus Quest, we aim to explore the human scale of the visualization and the different type of gestural movements that need to be carried out by the participant. Therefore, and since some of the points are intentionally farther away, the participant is given virtual mallets to bang each point in the cloud to hear playback.
 
 \paragraph{Sequencer}
+
 With the ability to play each point, we brought a Unity-based version of Brent's newly implemented sequencer into the experience \cite{wbrent2019}. The participant can draw lines across several points holding a controller's trigger while hovering through the points. Each line cab be stored and played back in sequence, randomly, at different speeds, and in different pitch transpositions. Multiple lines can be drawn and stored, and they can all be triggered simultaneously or at deferred times. Moreover, the user can disable the sequencer and instead bang the entire line containing all points, listening to all points at the same time, as if it were a single sound composed of a selection of grains. The envelopes of this sound can be changed, as well as speed and transposition. While the internal logic of the line drawing, selecting, and sequencing is made within a \texttt{C\#} script in Unity, the playback is done entirely within a \texttt{pd} patch loaded via \texttt{libpd} for Unity \cite{libpd2019}. We based our Unity and \texttt{libpd} integration with PlayDot's repository \cite{playdots2019}.
 
 \paragraph{Spatialization}
@@ -97,7 +59,7 @@ We designed the playback of the grains using \texttt{pd}’s embedded library \t
 
 \begin{figure*}[htbp]
        \centering
-              \includegraphics[width=0.75\textwidth]{IMG_4563}
+              \includegraphics[width=0.75\textwidth]{IMG_4563.jpg}
        \caption{A participant performing PathoSonic. Other than to display the participant's view on screen, the experience is completely wireless.}
        \label{fig:IMG_4563}
 \end{figure*}
@@ -114,15 +76,8 @@ This research was made at ACCAD with the gracious participation of Taylor Olsen,
 
 
 % \section{Ethical Standards}
-% This research was entirely made within ACCAD and 
+
 % To ensure objectivity and transparency in research and to ensure that accepted principles of ethical and professional conduct have been followed, authors should include a section “Ethical Standards” before the References, including (if relevant): information regarding sources of funding, potential conflicts of interest (financial or non-financial), informed consent if the research involved human participants, statement on welfare of animals if the research involved animals.
-
-
-
-
-
-
-
 
 \bibliographystyle{abbrv}
 \bibliography{pathosonic} 
