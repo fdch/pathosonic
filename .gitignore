@@ -54,3 +54,5 @@ crashlytics-build.properties
 .DS_Store
 
 old/
+video/
+
