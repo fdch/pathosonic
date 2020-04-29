@@ -1,0 +1,62 @@
+\begin{thebibliography}{10}
+
+\bibitem{giovanni_santini_2019_3249329}
+{\em {Composing Space in the Space: An augmented and Virtual Reality Sound
+  Spatialization System}}. Zenodo, May 2019.
+
+\bibitem{anil_camci_2019_3249315}
+{\em {Exploring the Effects of Diegetic and Non-diegetic Audiovisual Cues on
+  Decision-making in Virtual Reality}}. Zenodo, May 2019.
+
+\bibitem{david_johnson_2019_3249319}
+{\em {OSC-XR: A Toolkit for Extended Reality Immersive Music Interfaces}}.
+  Zenodo, May 2019.
+
+\bibitem{icmc/bbp2372.2010.044}
+W.~Brent.
+\newblock A timbre analysis and classification toolkit for pure data.
+\newblock In {\em Proceedings of the International Computer Music Conference,
+  {ICMC} 2010}, 2010.
+
+\bibitem{wbrent2019}
+W.~Brent.
+\newblock timbreid.
+\newblock \url{https://github.com/wbrent/timbreid}, 2019.
+
+\bibitem{libpd2019}
+P.~Brinkmann and the libpd~team 2010-2018.
+\newblock libpd.
+\newblock \url{https://github.com/libpd/libpd}, 2019.
+
+\bibitem{rgraham2017}
+R.~Graham, B.~Bridges, C.~Manzione, and W.~Brent.
+\newblock Exploring pitch and timbre through 3d spaces: Embodied models in
+  virtual reality as a basis for performance systems design.
+\newblock In {\em Proceedings of the International Conference on New Interfaces
+  for Musical Expression}, pages 157--162, Copenhagen, Denmark, 2017. Aalborg
+  University Copenhagen.
+
+\bibitem{KUCHERAMORIN201410}
+J.~Kuchera-Morin, M.~Wright, G.~Wakefield, C.~Roberts, D.~Adderton, B.~Sajadi,
+  T.~Höllerer, and A.~Majumder.
+\newblock Immersive full-surround multi-user system design.
+\newblock {\em Computers and Graphics}, 40:10 -- 21, 2014.
+
+\bibitem{neupert2017}
+M.~Neupert.
+\newblock Exploring concatenative synthesis units in vr.
+\newblock 2017.
+
+\bibitem{playdots2019}
+PlayDots.
+\newblock Unitypd.
+\newblock \url{https://github.com/playdots/UnityPd}, 2019.
+
+\bibitem{gwakefield2014}
+G.~Wakefield, C.~Roberts, M.~Wright, T.~Wood, and K.~Yerkes.
+\newblock Collaborative live-coding with an immersive instrument.
+\newblock In {\em Proceedings of the International Conference on New Interfaces
+  for Musical Expression}, pages 505--508, London, United Kingdom, June 2014.
+  Goldsmiths, University of London.
+
+\end{thebibliography}

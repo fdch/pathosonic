@@ -330,3 +330,8 @@ table td {
 audio {
   width:100%;
 }
+
+p span:not(.citation){
+    font-weight: bold;
+    display: block;
+}
