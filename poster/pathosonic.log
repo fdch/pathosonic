@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.29)  1 MAY 2020 16:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.29)  8 JUN 2020 12:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -582,89 +582,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--36
 \T1/aer/m/n/9 repos-i-tory for the en-tire project is here:
  []
 
-<pathosonic8.jpg, id=8, 1650.165pt x 935.495pt>
-File: pathosonic8.jpg Graphic file (type jpg)
-<use pathosonic8.jpg>
-Package pdftex.def Info: pathosonic8.jpg  used on input line 45.
-(pdftex.def)             Requested size: 500.0pt x 283.44846pt.
 LaTeX Font Info:    Trying to load font information for T1+aett on input line 5
 0.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-<IMG_4563.jpg, id=10, 4047.12pt x 3035.34pt>
+<IMG_4563.jpg, id=8, 4047.12pt x 3035.34pt>
 File: IMG_4563.jpg Graphic file (type jpg)
 <use IMG_4563.jpg>
 Package pdftex.def Info: IMG_4563.jpg  used on input line 60.
-(pdftex.def)             Requested size: 500.0pt x 374.97028pt.
+(pdftex.def)             Requested size: 250.0pt x 187.48514pt.
  [2
 
  <./cc_by.pdf>]
-<first_iteration.png, id=26, 1284.8pt x 803.0pt>
-File: first_iteration.png Graphic file (type png)
-<use first_iteration.png>
-Package pdftex.def Info: first_iteration.png  used on input line 79.
-(pdftex.def)             Requested size: 500.0pt x 312.49484pt.
-<second_iteration.png, id=27, 1284.8pt x 803.0pt>
-File: second_iteration.png Graphic file (type png)
-<use second_iteration.png>
-Package pdftex.def Info: second_iteration.png  used on input line 92.
-(pdftex.def)             Requested size: 500.0pt x 312.49484pt.
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3 <./pathosonic8.jpg>] [4 <./IMG_4563.jpg>]
-<pathosonic3.jpg, id=37, 1673.25125pt x 976.64874pt>
-File: pathosonic3.jpg Graphic file (type jpg)
-<use pathosonic3.jpg>
-Package pdftex.def Info: pathosonic3.jpg  used on input line 113.
-(pdftex.def)             Requested size: 500.0pt x 291.83449pt.
-
-Underfull \vbox (badness 3049) has occurred while \output is active []
-
-
-Underfull \vbox (badness 3049) has occurred while \output is active []
-
- [5 <./first_iteration.png>] [6 <./second_iteration.png>]
-<screen-rec.png, id=46, 1284.8pt x 803.0pt>
-File: screen-rec.png Graphic file (type png)
-<use screen-rec.png>
-Package pdftex.def Info: screen-rec.png  used on input line 128.
-(pdftex.def)             Requested size: 500.0pt x 312.49484pt.
- (./pathosonic.bbl
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7 <./pathosonic3.jpg>] [8 <./screen-rec.png>]) [9
-
-] (./pathosonic.aux) ) 
+ [3 <./IMG_4563.jpg>] (./pathosonic.bbl) [4] (./pathosonic.aux) ) 
 Here is how much of TeX's memory you used:
- 3844 strings out of 482630
- 52889 string characters out of 5952802
- 294556 words of memory out of 5000000
- 19307 multiletter control sequences out of 15000+600000
+ 3808 strings out of 482630
+ 51158 string characters out of 5952802
+ 294500 words of memory out of 5000000
+ 19277 multiletter control sequences out of 15000+600000
  581633 words of font info for 82 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  46i,11n,35p,1949b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/
-8r.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1
-.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.p
-fb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb>
-</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></u
-sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr
-/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/l
-ocal/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/loc
-al/texlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texl
-ive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/202
-0/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-di
-st/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
-ype1/urw/times/utmri8a.pfb>
-Output written on pathosonic.pdf (9 pages, 5382464 bytes).
+{/usr/local/te
+xlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2020/texm
+f-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2020/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></usr/local/texlive/2020/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2020/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2020/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
+ype1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
+e1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/
+helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/u
+tmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+</usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on pathosonic.pdf (4 pages, 1803546 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
+ 70 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
